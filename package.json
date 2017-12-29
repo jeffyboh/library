@@ -10,9 +10,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "ejs": "^2.3.4",
     "express": "^4.16.2",
     "jade": "^1.11.0",
-    "ejs": "^2.3.4"
+    "mongodb": "^2.2.33"
   },
   "devDependencies": {
     "gulp": "^3.9.0",

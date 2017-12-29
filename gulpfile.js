@@ -29,13 +29,14 @@ gulp.task('inject', function () {
 
     var injectOptions = {
         ignorePath: '/public'
-    }
+    };
 
     var options = {
         bowerJson: require('./bower.json'),
         directory: './public/lib',
         ignorePath: '../../public'
-    }
+    };
+
     return gulp.src('./src/views/*.ejs')
         .pipe(wiredep(options))
         .pipe(inject(injectSrc, injectOptions))
@@ -50,10 +51,10 @@ gulp.task('serve', ['style', 'inject'], function () {
             port: 3000
         },
         watch: jsFiles
-    }
+    };
 
     return nodemon(options)
         .on('restart', function (ev) {
             console.log('Restarting...');
-        })
-})
+        });
+});
