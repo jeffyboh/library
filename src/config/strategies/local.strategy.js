@@ -22,9 +22,8 @@ module.exports = function() {
                     } else {
                         done(null, false, {message: 'Bad password'});
                     }
-                    
                 }
-            );  
+            );
         });
     }));
 };
